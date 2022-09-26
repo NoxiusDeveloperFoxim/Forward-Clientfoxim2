@@ -14,6 +14,6 @@ async def CheckBlockedExt(event: Message):
             if (_file[-1].lower() in Config.BLOCKED_EXTENSIONS) or (_file[-1].upper() in Config.BLOCKED_EXTENSIONS):
                 return True
             else:
-                return False
+                return True
         else:
-            return False
+            return True
